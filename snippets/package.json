@@ -1,0 +1,31 @@
+{
+	"name": {
+		"engines":{
+			"vscode": "^1.11.0"
+		}
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "blade",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "blade",
+				"path": "./snippets/helpers.json"
+			},
+			{
+				"language": "blade",
+				"path": "./snippets/livewire.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/blade.json"
+			},
+			{
+				"language":"blade",
+				"path":"./syntaxes/blade.tmLanguage.json"
+			}
+		]
+	}
+}
