@@ -47,7 +47,7 @@ keymap.set("n","<leader>ex","<cmd>NvimTreeClose<CR>")
 -- bufferline
 keymap.set("n","<C-[>","<Plug>(cokeline-focus-prev)")
 keymap.set("n","<C-]>","<Plug>(cokeline-focus-next)")
-keymap.set("n","<C-x>","<Plug>(cokeline-pick-close)")
+keymap.set("n","<C-c>","<Plug>(cokeline-pick-close)")
 for i = 1,9 do
   keymap.set('n', ('<leader>%s'):format(i), ('<Plug>(cokeline-focus-%s)'):format(i))
 end
@@ -59,7 +59,7 @@ keymap.set("n","<leader>gl",":LazyGit<CR>")
 keymap.set("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
 keymap.set({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>", { silent = true })
 keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
-keymap.set("n","<leader>o", "<cmd>LSoutlineToggle<CR>",{ silent = true })
+-- keymap.set("n","<leader>o", "<cmd>LSoutlineToggle<CR>",{ silent = true })
 keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 keymap.set("n", "<C-k>", "<cmd>Lspsaga show_cusor_diagnostics<CR>", { silent = true })
 

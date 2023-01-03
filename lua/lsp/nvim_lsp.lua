@@ -42,7 +42,7 @@ end
 
 vim.cmd [[ autocmd BufRead,BufNewfile *.conf set filetype=nginx ]]
 
--- vim.cmd [[ autocmd BufRead,BufNewfile *.blade.php set filetype=blade ]]
+vim.cmd [[ autocmd BufRead,BufNewfile *.blade.php set filetype=blade ]]
 
 
 -- config.blade =  {
@@ -85,7 +85,7 @@ nvim_lsp.sumneko_lua.setup{
 	settings = {
 		Lua = {
 			diagnostics = {
-				globals = { 'vim' }
+				globals = { 'vim', 'require' }
 			}
 		}
 	}
@@ -96,14 +96,17 @@ nvim_lsp.clangd.setup{
 	on_attach = on_attach,
 }
 
-nvim_lsp.phpactor.setup{
+-- nvim_lsp.phpactor.setup{
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- }
+
+nvim_lsp.intelephense.setup{
 	capabilities = capabilities,
-	on_attach = on_attach,
+	on_attach = on_attach
 }
 
-
 nvim_lsp.html.setup{
-	filetypes = { "html" },
 	capabilities = capabilities,
 	on_attach = on_attach
 }

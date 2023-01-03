@@ -21,10 +21,6 @@
 			{
 				"language": "php",
 				"path": "./snippets/blade.json"
-			},
-			{
-				"language":"blade",
-				"path":"./syntaxes/blade.tmLanguage.json"
 			}
 		]
 	}

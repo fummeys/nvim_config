@@ -93,7 +93,7 @@ return require('packer').startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 	use({
 		"glepnir/lspsaga.nvim",
-		branch = "main",
+		branch = "version_2.3",
 	})
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 	use({
