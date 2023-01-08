@@ -15,13 +15,13 @@ require("plugins.lualine")
 
 require("lsp.nvim_lsp")
 
---[[ require("plugins.bufferline") ]]
+-- require("plugins.bufferline")
 
 require("plugins.tree_sitter")
 require("plugins.telescope")
 
 require("plugins.nvim_cmp")
-
+require("plugins.rest")
 
 require("lsp.mason")
 require("lsp.lspsaga")

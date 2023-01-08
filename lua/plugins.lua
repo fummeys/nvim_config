@@ -114,8 +114,10 @@ return require('packer').startup(function(use)
 	}
 	use "airblade/vim-gitgutter"
 	use "jwalton512/vim-blade"
-
-
+	use {
+		"rest-nvim/rest.nvim",
+		requires = { "nvim-lua/plenary.nvim" }
+	}
 	-- use "/home/remmy/Documents/GitHub/plugins/blade_snip"
 
 	-- Automatically set up your configuration after cloning packer.nvim
