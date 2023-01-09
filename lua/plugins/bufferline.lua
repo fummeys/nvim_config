@@ -68,8 +68,20 @@ local components = {
 		text = function(buffer)
 			return buffer.unique_prefix
 		end,
-		fg = comments_fg,
-		style = 'italic',
+		fg = function(buffer)
+			return
+				(buffer.diagnostics.errors ~= 0 and errors_fg)
+				or (buffer.diagnostics.warnings ~= 0 and warnings_fg)
+				or nil
+		end,
+		style = function(buffer)
+			return
+				((buffer.is_focused and buffer.diagnostics.errors ~= 0)
+				and 'bold,underline')
+				or (buffer.is_focused and 'underline')
+				or (buffer.diagnostics.errors ~= 0 and 'bold')
+				or nil
+		end,
 		-- trunation = {
 		-- 	priority = 3,
 		-- 	direction = 'right',
@@ -90,8 +102,8 @@ local components = {
 			return
 				((buffer.is_focused and buffer.diagnostics.errors ~= 0)
 				and 'bold,underline')
-				or (buffer.is_focused and 'bold')
-				or (buffer.diagnostics.errors ~= 0 and 'underline')
+				or (buffer.is_focused and 'underline')
+				or (buffer.diagnostics.errors ~= 0 and 'bold')
 				or nil
 		end,
 		truncation = {
