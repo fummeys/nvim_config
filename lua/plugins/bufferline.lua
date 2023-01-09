@@ -173,6 +173,7 @@ require('cokeline').setup({
 		}
 	},
 
+
 	components = {
 		components.separator,
 		-- components.left_half_circle,
@@ -181,7 +182,7 @@ require('cokeline').setup({
 		components.index,
 		components.unique_prefix,
 		components.filename,
-		-- components.space,
+		components.space,
 		-- right_padding,
 		components.close_or_unsaved,
 		-- components.right_half_circle,
