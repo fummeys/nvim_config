@@ -15,8 +15,6 @@ require("plugins.lualine")
 
 require("lsp.nvim_lsp")
 
-require("plugins.bufferline")
-
 require("plugins.tree_sitter")
 require("plugins.telescope")
 

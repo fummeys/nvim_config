@@ -52,12 +52,12 @@ keymap.set("n","<leader>ef","<cmd>NvimTreeFocus<CR>")
 keymap.set("n","<leader>ex","<cmd>NvimTreeClose<CR>")
 
 -- bufferline
-keymap.set("n","<C-[>","<Plug>(cokeline-focus-prev)")
-keymap.set("n","<C-]>","<Plug>(cokeline-focus-next)")
-keymap.set("n","<C-c>","<Plug>(cokeline-pick-close)")
-for i = 1,9 do
-  keymap.set('n', ('<leader>%s'):format(i), ('<Plug>(cokeline-focus-%s)'):format(i))
-end
+-- keymap.set("n","<C-[>","<Plug>(cokeline-focus-prev)")
+-- keymap.set("n","<C-]>","<Plug>(cokeline-focus-next)")
+-- keymap.set("n","<C-c>","<Plug>(cokeline-pick-close)")
+-- for i = 1,9 do
+--   keymap.set('n', ('<leader>%s'):format(i), ('<Plug>(cokeline-focus-%s)'):format(i))
+-- end
 
 -- Lazygit
 keymap.set("n","<leader>gl",":LazyGit<CR>")

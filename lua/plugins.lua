@@ -35,13 +35,6 @@ return require('packer').startup(function(use)
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
-	use({
-		'noib3/nvim-cokeline',
-		requires = 'kyazdani42/nvim-web-devicons', -- If you want devicons
-		config = function()
-			require('cokeline').setup()
-		end
-	})
 
 	use {
 		"folke/which-key.nvim",
