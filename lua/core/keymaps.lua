@@ -18,7 +18,7 @@ keymap.set("n","<leader>tt",":terminal<CR>")
 
 -- tabs
 keymap.set("n","<leader>tn",":tabnew<CR>")
-keymap.set("n","<leader>]",":tabNext<CR>")
+keymap.set("n","<leader>]",":tabnext<CR>")
 keymap.set("n","<leader>[",":tabprevious<CR>")
 keymap.set("n","<leader>tc",":tabclose<CR>")
 
