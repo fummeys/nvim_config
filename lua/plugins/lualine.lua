@@ -1,3 +1,8 @@
 require('lualine').setup {
-  -- options = { theme  = "abscs" },
+  options = {
+		theme  = "auto"
+	},
+	sections = {
+		lualine_c = {'filesize','filename'}
+	}
 }
