@@ -4,7 +4,7 @@ local keymap = vim.keymap
 
 keymap.set("i","jk","<ESC>") -- exit insert mode
 
-keymap.set("n","<C-s>",":w<CR>")
+keymap.set({"n","v"},"<C-s>",":w<CR>")
 keymap.set("n","<C-q>",":q<CR>")
 
 
