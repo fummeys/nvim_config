@@ -1,5 +1,4 @@
 {
-  /* Paths */
   "Path-elixir": {
     "prefix": "lv:elixir",
     "body": "{{ elixir('${1:file}') }}",
@@ -10,13 +9,11 @@
     "body": "{{ mix('${1:file}') }}",
     "description": "mix path"
   },
-  /* Strings */
   "String-trans": {
     "prefix": "lv:trans",
     "body": "{{ trans('$1') }}",
     "description": "trans"
   },
-  /* URLs */
   "URL-action": {
     "prefix": "lv:action",
     "body": "{{ action('${1:ControllerName}', [${2:'id'=>1}]) }}",
@@ -42,7 +39,6 @@
     "body": "{{ route('${1:routeName}', [${2:'id'=>1}]) }}",
     "description": "URL-route"
   },
-  /* Miscellaneous */
   "Form-csrf-field": {
     "prefix": "lv:csrf-field",
     "body": "{{ csrf_field() }}",
@@ -53,7 +49,6 @@
     "body": "{{ csrf_token() }}",
     "description": "CSRF token"
   },
-  /* Paginate */
   "Paginate-links": {
     "prefix": "lv:pagination-links",
     "body": "{{ \\$${1:collection}->links() }}",

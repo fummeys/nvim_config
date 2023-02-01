@@ -108,6 +108,7 @@ nvim_lsp.intelephense.setup{
 
 nvim_lsp.html.setup{
 	capabilities = capabilities,
+	filetypes = {"html","blade"},
 	on_attach = on_attach
 }
 
