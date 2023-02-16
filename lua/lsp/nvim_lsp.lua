@@ -79,7 +79,7 @@ nvim_lsp.nginx.setup{
 -- }
 
 -- lua
-nvim_lsp.sumneko_lua.setup{
+nvim_lsp.lua_ls.setup{
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = {
@@ -116,6 +116,7 @@ nvim_lsp.cssls.setup{
 	capabilities = capabilities,
 	on_attach = on_attach
 }
+
 
 nvim_lsp.cssls.setup{
 	capabilities = capabilities,
@@ -160,6 +161,4 @@ nvim_lsp.yamlls.setup{
 	capabilities = capabilities,
 	on_attach = on_attach
 }
-
-
 
