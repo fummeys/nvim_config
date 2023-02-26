@@ -12,7 +12,6 @@ require("core.colors.setup")
 require("plugins.nvtree")
 require("plugins.comment")
 require("plugins.lualine")
-
 require("lsp.nvim_lsp")
 
 require("plugins.tree_sitter")

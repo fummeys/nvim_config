@@ -67,6 +67,17 @@ config.nginx = {
 	}
 }
 
+nvim_lsp.jdtls.setup{
+   cmd = { 'jdtls' },
+   root_dir = function(fname)
+      return require'lspconfig'.util.root_pattern('pom.xml', 'gradle.build', '.git')(fname) or vim.fn.getcwd()
+   end
+}
+
+nvim_lsp.gradle_ls.setup{
+	capabilities = capabilities,
+	on_attach = on_attach
+}
 
 nvim_lsp.nginx.setup{
 	capabilities = capabilities,
@@ -157,3 +168,7 @@ nvim_lsp.yamlls.setup{
 	on_attach = on_attach
 }
 
+nvim_lsp.sqlls.setup{
+	capabilities = capabilities,
+	on_attach = on_attach
+}
